@@ -13,6 +13,10 @@ body {
     margin: 0 auto;
     background-color: aquamarine;
 }
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
 .main {
     display: flex;
     flex-flow: column;
@@ -20,11 +24,18 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: rgb(44, 82, 223);
     padding: 10px 20px 0px;
+    color: white;
 }
+.menu li a {
+    color: white; /* Define a cor do texto como branco para os links dentro dos itens de lista da classe .menu */
+    font-size: 22px;
+    line-height: 2;
+}
+
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: rgb(121, 119, 231);
     min-height: 150px;
 }
 .content {
@@ -35,4 +46,82 @@ body {
 .footer {
     background-color: rgb(99, 56, 240);
     min-height: 150px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* Colapso das bordas das células */
+}
+
+/* Estilo para as células do cabeçalho */
+th {
+    background-color: #f2f2f2; /* Cor de fundo do cabeçalho */
+    padding: 8px; /* Espaçamento interno das células do cabeçalho */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    border-bottom: 1px solid #ddd; /* Borda inferior das células do cabeçalho */
+}
+
+/* Estilo para as células do corpo */
+td {
+    padding: 8px; /* Espaçamento interno das células do corpo */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    border-bottom: 1px solid #ddd; /* Borda inferior das células do corpo */
+}
+
+/* Estilo para as células alternadas */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares */
+}
+/* Estilos gerais para o formulário */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Estilo para os rótulos dos campos */
+label {
+    display: block; /* Faz com que os rótulos ocupem uma linha inteira */
+    margin-bottom: 5px; /* Adiciona um pequeno espaçamento abaixo de cada rótulo */
+}
+
+/* Estilo para os campos de entrada de texto e e-mail */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Os campos de entrada ocupam toda a largura disponível */
+    padding: 8px; /* Adiciona um espaçamento interno aos campos */
+    margin-bottom: 10px; /* Adiciona um espaçamento abaixo de cada campo */
+    border: 1px solid #ccc; /* Adiciona uma borda aos campos */
+    border-radius: 4px; /* Arredonda as bordas dos campos */
+    box-sizing: border-box; /* Faz com que o tamanho do campo inclua a borda e o preenchimento */
+}
+
+/* Estilo para o botão de envio */
+button[type="submit"],
+button[type="reset"] {
+    padding: 10px 20px; /* Adiciona um espaçamento interno ao botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 4px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+}
+
+/* Estilo para o botão de envio quando o cursor está sobre ele */
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #0056b3; /* Altera a cor de fundo do botão quando o cursor passa por cima */
+}
+h3 {
+    text-align: center;
+}
+.iframe-container {
+    text-align: center; /* Alinha o conteúdo ao centro */
+}
+
+.iframe-container iframe {
+    display: inline-block; /* Permite a aplicação do margin: auto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border: 0; /* Remove a borda padrão do iframe */
+    border-radius: 10px; /* Arredonda os cantos */
 }
